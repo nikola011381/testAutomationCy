@@ -51,7 +51,8 @@
   "devDependencies": {
     "@cypress/code-coverage": "3.9.12",
     "@cypress/instrument-cra": "1.4.0",
-    "@percy/cypress": "2.3.4",
+    "@percy/cli": "^1.6.3",
+    "@percy/cypress": "^2.3.4",
     "@types/bcryptjs": "2.4.2",
     "@types/bluebird": "3.5.36",
     "@types/connect-flash": "0.0.37",

@@ -43,6 +43,6 @@ describe('SingUp Test suite', function() {
       cy.get('[data-test="signup-submit"]').click();
 
         cy.get('.MuiGrid-root > a').click()
-        cy.get('[class="MuiTypography-root MuiTypography-h5"]').contains('Sign in')
+        cy.get('[class="MuiTypography-root MuiTypography-h5"]').contains('Sign in') 
     });
 });

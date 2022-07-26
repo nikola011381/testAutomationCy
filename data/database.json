@@ -96,6 +96,17 @@
       "balance": 0,
       "createdAt": "2022-07-26T19:46:53.091Z",
       "modifiedAt": "2022-07-26T19:46:53.091Z"
+    },
+    {
+      "id": "EUIhOHS5d",
+      "uuid": "f1e8cb00-dde2-46f3-b9fa-64df51d95ed8",
+      "firstName": "first name",
+      "lastName": "last name",
+      "username": "username",
+      "password": "$2a$10$pZUjt7jj6u7YvgHda5hs8eATK9OPTRSAnPT9cY.wrExsGCqD94fLy",
+      "balance": 0,
+      "createdAt": "2022-07-26T19:48:51.278Z",
+      "modifiedAt": "2022-07-26T19:48:51.278Z"
     }
   ],
   "contacts": [

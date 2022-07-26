@@ -44,6 +44,7 @@
     "shortid": "2.2.16",
     "uuid": "8.3.2",
     "xstate": "4.27.0",
+    "yarn": "^1.22.19",
     "yup": "0.32.11"
   },
   "devDependencies": {

@@ -1,5 +1,7 @@
 /// <reference types="Cypress" />
 
+const { should } = require("chai");
+
 describe('SingUp Test suite', function() {
     it('1. Navigate to Sing Up page', function() {
         cy.visit('/');
@@ -8,7 +10,8 @@ describe('SingUp Test suite', function() {
     });
 
     it('2. Click on Sing-up while all fields are not populated', function() {
-        //TODO
+       cy.get('.MuiButton-label').click();
+       cy.get('#firstName-helper-text').should('have.text','First Name is required'); 
     });
 
     it('3. Check if all sign up fields are mandatory and have proper error message', function() {

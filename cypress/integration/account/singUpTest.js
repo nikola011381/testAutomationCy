@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
 
 
-describe('SingUp Test suite', function() {
+describe('SingUp Test  suite', function() {
     it('1. Navigate to Sing Up page', function() {
         cy.visit('/');
         cy.get('[data-test="signup"]').click();

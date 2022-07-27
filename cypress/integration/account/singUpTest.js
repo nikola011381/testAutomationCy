@@ -46,3 +46,5 @@ describe('SingUp Test suite', function() {
         cy.get('[class="MuiTypography-root MuiTypography-h5"]').contains('Sign in') 
     });
 });
+
+//VEZBA 4

@@ -24,7 +24,7 @@ describe('SingUp Test suite', function() {
         cy.get('#password-helper-text').should('have.text','Enter your password');
         cy.get('#confirmPassword').focus().blur()
         cy.get('#confirmPassword-helper-text').should('have.text','Confirm your password');
-       
+        
 
     });
 

@@ -8,4 +8,7 @@ describe('First Test suite', function() {
         //cy.get('.MuiTypography-h5').contains('Sign in');
         cy.get('.MuiContainer-root > .MuiTypography-root').should('have.text', 'Built by');
     });
-});
+});    
+
+
+// GIT 4

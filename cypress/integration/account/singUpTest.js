@@ -46,4 +46,4 @@ describe('SingUp Test  suite', function() {
         cy.get('[class="MuiTypography-root MuiTypography-h5"]').contains('Sign in') 
     });
 });
-// GIT COMMIT VEZBA 6
+// GIT COMMIT VEZBA 6       

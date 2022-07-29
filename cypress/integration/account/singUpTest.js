@@ -25,7 +25,7 @@ describe('SingUp Test  suite', function() {
         cy.get('#confirmPassword').focus().blur()
         cy.get('#confirmPassword-helper-text').should('have.text','Confirm your password');
         
-     // GIT COMMIT VEZBA 6
+     // GIT COMMIT VEZBA 6 
     });
 
     it('4. Populate all sign up fields and Sing Up button should be enabled', function() {

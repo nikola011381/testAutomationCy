@@ -12,7 +12,7 @@ describe('SingUp Test  suite', function() {
         cy.get('[data-test="signup-submit"]').click();
       cy.get('#firstName-helper-text').should('have.text','First Name is required'); 
     });
-
+ 
     it('3. Check if all sign up fields are mandatory and have proper error message', function() {
         cy.get('#firstName').focus().blur()
         cy.get('#firstName-helper-text').should('have.text','First Name is required');

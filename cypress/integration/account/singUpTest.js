@@ -21,7 +21,7 @@ describe('SingUp Test  suite', function() {
         cy.get('#username').focus().blur()
         cy.get('#username-helper-text').should('have.text','Username is required');
         cy.get('#password').focus().blur()
-        cy.get('#password-helper-text').should('have.text','Enter your password');
+        cy.get('#password-helper-text').should('have.text','Enter your password'); 
         cy.get('#confirmPassword').focus().blur()
         cy.get('#confirmPassword-helper-text').should('have.text','Confirm your password');
          

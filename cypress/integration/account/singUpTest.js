@@ -37,7 +37,7 @@ describe('SingUp Test  suite', function() {
         cy.get('[data-test="signup-submit"]').should('be.enabled');
 
     });  
-
+ 
     it('5. Navigate back to Sign In page', function() {
       //  cy.get('[data-test="signup"]').click();
       cy.get('[data-test="signup-submit"]').click();

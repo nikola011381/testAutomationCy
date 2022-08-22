@@ -33,7 +33,7 @@ describe('SingUp Test  suite', function() {
         cy.get('#lastName').type('last name')
         cy.get('#username').type('username')
         cy.get('#password').type('password')
-        cy.get('#confirmPassword').type('password')
+        cy.get('#confirmPassword').type('password') 
         cy.get('[data-test="signup-submit"]').should('be.enabled');
 
     });  

@@ -13,7 +13,7 @@ describe('Login Page suite', function() {
         cy.get('#username-helper-text').should('have.text', 'Username is required');
         cy.get('[data-test="signin-submit"]').should('be.disabled');
     });
- 
+  
     it('2. Login with empty password', function() {
         //cy.visit('/');
         cy.get('#username').type('Katharina_Bernier');

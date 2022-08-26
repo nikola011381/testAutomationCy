@@ -4,7 +4,7 @@ describe('Login Page suite', function() {
 
     beforeEach('Visit our application.', function () {
         cy.visit('/');
-    });
+    });  
  
     it('1. Login with empty username', function() {
         //cy.visit('/');

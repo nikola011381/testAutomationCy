@@ -15,7 +15,7 @@ describe('Login Page suite', function() {
     });
   
     it('2. Login with empty password', function() {
-        //cy.visit('/');
+        //cy.visit('/'); 
         cy.get('#username').type('Katharina_Bernier');
         cy.get('#password').clear();
         cy.get('[data-test="signin-submit"]').should('be.disabled');

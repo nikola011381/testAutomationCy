@@ -20,7 +20,7 @@ describe('Main Page suite', function() {
         cy.intercept('GET', 'http://localhost:3001/notifications').as('notification')
         //cy.intercept('GET', 'http://localhost:3001/notifications', []).as('notification2')
     });
-
+ 
     it('Navigate to Notification page', function () {  
         cy.loginUser('Katharina_Bernier', 's3cret')
         cy.get('[data-test="sidenav-notifications"]').click().then(() => {

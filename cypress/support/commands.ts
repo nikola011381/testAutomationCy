@@ -1,5 +1,6 @@
 // @ts-check
 ///<reference path="../global.d.ts" />
+/// <reference path="../support/index.d.ts" />
 
 import { pick } from "lodash/fp";
 import { format as formatDate } from "date-fns";
@@ -363,3 +364,34 @@ Cypress.Commands.add("loginByGoogleApi", () => {
     });
   });
 });
+
+Cypress.Commands.add("loginUser", (username, password) => {
+  cy.get('#username').type(username);
+  cy.get('#password').type(password);
+  cy.get('[data-test="signin-submit"]').click();
+});
+
+Cypress.Commands.add("logoutUser", () =>  {
+  cy.get('[data-test="sidenav-signout"]').click();
+});
+
+Cypress.Commands.add("tabNavigation", (tab) => {
+  cy.get(tab).click()
+  cy.get(tab)
+    .invoke('attr', 'aria-selected')
+    .should('eql', 'true')
+  cy.wait(2000)
+});
+
+Cypress.Commands.add("newTransaction", (contact, amount, description, type) => {
+  cy.get('[data-test="nav-top-new-transaction"]').click()
+  cy.wait(2000);
+  cy.get(contact).click()
+  cy.get('#amount').type(amount)
+  cy.get('#transaction-create-description-input').type(description)
+  if(type === 'request'){
+    cy.get('[data-test="transaction-create-submit-request"]').click()
+  }else if(type === 'payment'){
+    cy.get('[data-test="transaction-create-submit-payment"]').click()
+  }
+})

@@ -395,3 +395,11 @@ Cypress.Commands.add("newTransaction", (contact, amount, description, type) => {
     cy.get('[data-test="transaction-create-submit-payment"]').click()
   }
 })
+
+
+Cypress.Commands.add("testlogin", ( user, pass) => {
+  cy.get('#username').type(user);
+  cy.get('#password').type(pass);
+  cy.get('[data-test="signin-submit"]').click()
+})
+

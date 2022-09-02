@@ -27,7 +27,7 @@ describe('Main Page suite', function() {
       cy.logoutUser()
     });
 
-    it.only('Create new transaction pay', function() {
+    it('Create new transaction pay', function() {
       let amount = 123, description = 'test pay' 
       cy.loginUser('Katharina_Bernier', 's3cret')
       cy.newTransaction('[data-test="user-list-item-24VniajY1y"]', amount, description, 'payment')
@@ -39,7 +39,7 @@ describe('Main Page suite', function() {
     });
 
     it('Filter by Date', function() {
-      const dateStart = startOfDay(new Date(2022, 4, 1))
+      const dateStart = startOfDay(new Date(2022, 9, 1))
       const dateEnd = endOfDayUTC(addDays(dateStart, 20))
       cy.loginUser('Katharina_Bernier', 's3cret')
       cy.get('[data-test="transaction-list-filter-date-range-button"]').click({force: true})

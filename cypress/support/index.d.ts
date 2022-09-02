@@ -19,5 +19,10 @@ declare namespace Cypress {
          * @example cy.newTransaction(contact, amount, description, type)
          */
         newTransaction(contact, amount, description, type): Chainable<any>;
+
+           /**
+         * @example cy.newTransaction(contact, amount, description, type)
+         */
+            testlogin(user, pass): Chainable<any>;
     }
 }

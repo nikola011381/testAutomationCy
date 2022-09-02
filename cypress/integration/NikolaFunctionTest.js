@@ -36,7 +36,7 @@ describe('Login Page suite', function() {
                     .find('span')
                     .should('have.text', expected[i])
                 }
-            })
+            }) 
 
     }) 
  

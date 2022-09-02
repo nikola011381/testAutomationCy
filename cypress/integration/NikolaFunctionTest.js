@@ -31,8 +31,9 @@ describe('Login Page suite', function() {
                 {
                     cy.get('li')
                     .eq(i)
-                    .find('div')
-                    .eq(1)
+                   // .find('div')
+                    .find('.MuiListItemText-root')
+                  //  .eq(1)
                     .find('span')
                     .should('have.text', expected[i])
                 }

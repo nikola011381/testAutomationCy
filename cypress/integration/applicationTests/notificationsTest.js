@@ -17,9 +17,9 @@ describe('Main Page suite', function() {
     beforeEach('Visit our application.', function () {
         cy.visit('/');
         //cy.fixture('/public-transactions.json').as('publicTransaction')
-        cy.intercept('GET', 'http://localhost:3001/notifications').as('notifications')
-        //cy.intercept('GET', 'http://localhost:3001/notifications', []).as('notification2')
-    });
+         cy.intercept('GET', 'http://localhost:3001/notifications').as('notifications')
+         //cy.intercept('GET', 'http://localhost:3001/notifications', []).as('notification2')
+    }); 
  
     it('Navigate to Notification page', function () {  
         cy.loginUser('Katharina_Bernier', 's3cret')

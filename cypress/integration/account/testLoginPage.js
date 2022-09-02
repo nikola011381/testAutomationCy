@@ -48,7 +48,6 @@ describe('Login Page suite', function() {
         cy.get('#username').type('Katharina_Bernier');
         cy.get('#password').type('s3cret');
         cy.get('[data-test="signin-submit"]').click();
-        cy.get('[data-test="sidenav-user-full-name"]').contains('Edgar J');
         cy.get('[data-test="sidenav-username"]').contains('@Katharina_Bernier');
     });
 

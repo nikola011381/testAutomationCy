@@ -50,7 +50,8 @@ describe('Main Page suite', function() {
           }).then(()=>{
                 cy.get('[data-test="nav-top-notifications-link"]').click().then(() => {
                     cy.get('.MuiPaper-root > .MuiTypography-h6').should('have.text', 'Notifications')
-                    cy.wait('@notification2')
+                   // cy.wait('@notification2')
+                   cy.wait(2000)
                     cy.get('[data-test="notifications-list"]').children().then((item) => {
                         expect(item.length).to.be.eq(Number(notificationNum));
                         for(let i = 0; i < item.length; i++){

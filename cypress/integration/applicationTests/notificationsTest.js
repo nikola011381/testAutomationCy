@@ -17,7 +17,7 @@ describe('Main Page suite', function() {
     beforeEach('Visit our application.', function () {
         cy.visit('/');
         //cy.fixture('/public-transactions.json').as('publicTransaction')
-        cy.intercept('GET', 'http://localhost:3001/notifications').as('notification')
+        cy.intercept('GET', 'http://localhost:3001/notifications').as('notifications')
         //cy.intercept('GET', 'http://localhost:3001/notifications', []).as('notification2')
     });
  
@@ -41,8 +41,8 @@ describe('Main Page suite', function() {
     it('Check Notification bell', function () {
         let notificationNum;
         cy.loginUser('Katharina_Bernier', 's3cret')
-        cy.wait(7000)
-        //cy.wait('@notification')
+        // cy.wait(7000)
+         cy.wait('@notifications')
         cy.get('[data-test="nav-top-notifications-count"]')
           .find('span')
           .then((value) =>{

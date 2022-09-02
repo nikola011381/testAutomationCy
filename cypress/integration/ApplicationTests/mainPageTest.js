@@ -40,7 +40,7 @@ describe('Main Page suite', function() {
     });
 
     it('Filter by Date', function() {
-      const dateStart = startOfDay(new Date(2022, 4, 1))
+      const dateStart = startOfDay(new Date(2022, 9, 1))
       const dateEnd = endOfDayUTC(addDays(dateStart, 20))
       cy.loginUser('Katharina_Bernier', 's3cret')
       cy.get('[data-test="transaction-list-filter-date-range-button"]').click({force: true})

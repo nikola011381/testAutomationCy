@@ -28,7 +28,7 @@ describe('Login Page suite', function() {
         cy.wait('@notification')
         cy.get('[data-test="notifications-list"]').children().then((item)=> {
         for (let  i=0; i<item.length; i++)
-                {
+                { 
                     cy.get('li')
                     .eq(i)
                    // .find('div')

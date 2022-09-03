@@ -11,7 +11,7 @@
       "phoneNumber": "625-316-9882",
       "avatar": "https://cypress-realworld-app-svgs.s3.amazonaws.com/t45AiwidW.svg",
       "defaultPrivacyLevel": "public",
-      "balance": 155837,
+      "balance": 168137,
       "createdAt": "2019-08-27T23:47:05.637Z",
       "modifiedAt": "2020-05-21T11:02:22.857Z"
     },
@@ -56,7 +56,7 @@
       "phoneNumber": "974-916-8746",
       "avatar": "https://cypress-realworld-app-svgs.s3.amazonaws.com/24VniajY1y.svg",
       "defaultPrivacyLevel": "private",
-      "balance": 158079,
+      "balance": 145779,
       "createdAt": "2020-03-06T02:15:42.584Z",
       "modifiedAt": "2020-05-21T09:25:42.974Z"
     },
@@ -253,28 +253,6 @@
       "isDeleted": false,
       "createdAt": "2019-09-30T14:20:07.043Z",
       "modifiedAt": "2020-05-21T22:40:28.910Z"
-    },
-    {
-      "id": "guRHlRqYF",
-      "uuid": "55b2379e-1cee-431d-bce2-7e642aa707e1",
-      "userId": "t45AiwidW",
-      "bankName": "test Bank name 1662139088349",
-      "accountNumber": "123-454-321",
-      "routingNumber": "567514521",
-      "isDeleted": true,
-      "createdAt": "2022-09-02T17:18:36.337Z",
-      "modifiedAt": "2022-09-02T17:18:36.337Z"
-    },
-    {
-      "id": "diQ85ckRf",
-      "uuid": "5cad3d11-13bc-4e94-9431-50be79c4dd94",
-      "userId": "t45AiwidW",
-      "bankName": "test Bank name 1662150325137",
-      "accountNumber": "123-454-321",
-      "routingNumber": "567514521",
-      "isDeleted": true,
-      "createdAt": "2022-09-02T20:25:56.525Z",
-      "modifiedAt": "2022-09-02T20:25:56.525Z"
     }
   ],
   "transactions": [
@@ -9877,31 +9855,6 @@
       "requestResolvedAt": "",
       "createdAt": "2019-06-27T22:24:04.794Z",
       "modifiedAt": "2020-05-21T04:58:44.494Z"
-    },
-    {
-      "id": "XUGU-51Kj",
-      "uuid": "a38baca2-f4b9-4468-afda-b4efa5301811",
-      "amount": 12300,
-      "description": "test request",
-      "receiverId": "bDjUb4ir5O",
-      "senderId": "t45AiwidW",
-      "privacyLevel": "public",
-      "status": "pending",
-      "requestStatus": "pending",
-      "createdAt": "2022-09-02T16:43:55.176Z",
-      "modifiedAt": "2022-09-02T16:43:55.176Z"
-    },
-    {
-      "id": "Kah2MJUmu",
-      "uuid": "4bfbeae2-c425-4fb5-80b4-8ec8369137cb",
-      "amount": 12300,
-      "description": "test pay",
-      "receiverId": "24VniajY1y",
-      "senderId": "t45AiwidW",
-      "privacyLevel": "public",
-      "status": "complete",
-      "createdAt": "2022-09-02T16:44:07.302Z",
-      "modifiedAt": "2022-09-02T16:44:07.302Z"
     }
   ],
   "likes": [
@@ -10478,26 +10431,6 @@
       "isRead": false,
       "createdAt": "2019-10-19T20:50:49.292Z",
       "modifiedAt": "2020-05-21T21:00:50.192Z"
-    },
-    {
-      "id": "nW_dxnMM7H",
-      "uuid": "18421a49-27fc-4233-a90b-80871848922d",
-      "userId": "bDjUb4ir5O",
-      "transactionId": "XUGU-51Kj",
-      "status": "requested",
-      "isRead": false,
-      "createdAt": "2022-09-02T16:43:55.186Z",
-      "modifiedAt": "2022-09-02T16:43:55.186Z"
-    },
-    {
-      "id": "tVgyotuWXU",
-      "uuid": "8f5cfc85-db2a-4bc4-869d-8ade58c2f6d4",
-      "userId": "24VniajY1y",
-      "transactionId": "Kah2MJUmu",
-      "status": "received",
-      "isRead": false,
-      "createdAt": "2022-09-02T16:44:07.347Z",
-      "modifiedAt": "2022-09-02T16:44:07.347Z"
     }
   ],
   "banktransfers": [

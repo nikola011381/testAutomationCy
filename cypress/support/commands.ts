@@ -403,3 +403,9 @@ Cypress.Commands.add("testlogin", ( user, pass) => {
   cy.get('[data-test="signin-submit"]').click()
 })
 
+Cypress.Commands.add("inputUserPass", ( user, pass) => {
+  cy.get('#username').type(user);
+  cy.get('#password').type(pass);
+ })
+
+
